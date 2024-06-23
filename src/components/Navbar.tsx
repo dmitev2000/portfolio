@@ -1,6 +1,7 @@
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
+import NavScrollLink from "./interface/NavScrollLink";
 
 const Navbar = () => {
   return (
@@ -8,54 +9,19 @@ const Navbar = () => {
       <p className="brand">DARMIT</p>
       <ul className="list-1">
         <li>
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "nav-link-active" : "nav-link"
-            }
-            to="/"
-          >
-            Home
-          </NavLink>
+          <NavScrollLink text="Home" name="home" />
         </li>
         <li>
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "nav-link-active" : "nav-link"
-            }
-            to="/skills"
-          >
-            Skills
-          </NavLink>
+          <NavScrollLink text="Skills" name="skills" />
         </li>
         <li>
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "nav-link-active" : "nav-link"
-            }
-            to="/projects"
-          >
-            Projects
-          </NavLink>
+          <NavScrollLink text="Experience" name="experience" />
         </li>
         <li>
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "nav-link-active" : "nav-link"
-            }
-            to="/experience"
-          >
-            Experience
-          </NavLink>
+          <NavScrollLink text="Projects" name="projects" />
         </li>
         <li>
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "nav-link-active" : "nav-link"
-            }
-            to="/Contact"
-          >
-            Contact
-          </NavLink>
+          <NavScrollLink text="Contact" name="contact" />
         </li>
       </ul>
       <input id="nav-toggler" type="checkbox" />

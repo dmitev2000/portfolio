@@ -11,7 +11,6 @@
   border-radius: 5px;
   margin: 5px 0;
   box-shadow: 0 0 2px;
-  margin-bottom: 35px;
 }
 
 .tech img {
@@ -26,13 +25,14 @@
 
 .tech-list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 15px;
   flex-wrap: wrap;
   color: var(--light);
   font-weight: bold;
   margin-top: 10px;
+  margin-bottom: 25px;
 }
 
 .h-line {
@@ -40,4 +40,24 @@
   height: 2px;
   background-color: var(--mblue);
   margin: 10px auto 20px;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--darker);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: solid 2px var(--mblue);
+  opacity: .5;
+}
+
+.scroll-top-btn:hover {
+  opacity: 1;
 }

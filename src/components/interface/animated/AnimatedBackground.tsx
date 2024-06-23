@@ -2,6 +2,7 @@ import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
+import "./Animated.css";
 
 const AnimatedBackground = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -17,11 +18,13 @@ const AnimatedBackground = () => {
 
   return (
     <Particles
-    style={{ marginTop: "60px", maxHeight: "calc(100vh - 60px)" }}  
-    id="tsparticles"
+      id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
+        fullScreen: {
+          enable: false,
+        },
         background: {
           color: {
             value: "#d3d9d4",

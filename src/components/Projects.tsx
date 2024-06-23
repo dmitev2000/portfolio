@@ -1,15 +1,13 @@
-import ProjectType from "./interface/ProjectType";
-import soloProj from "../assets/proj/proj-solo.svg";
-import teamProj from "../assets/proj/proj-team.svg";
-import otherProj from "../assets/proj/proj-other.svg";
+import { Element } from "react-scroll";
 
 const Projects = () => {
   return (
-    <div className="projects">
-      <ProjectType image={soloProj} text="Individual" />
-      <ProjectType image={teamProj} text="Team" />
-      <ProjectType image={otherProj} text="Other" />
-    </div>
+    <Element className="item-wrapper" name="projects">
+      <h1 className="title">Projects & Developments</h1>
+      <p className="sub-title">
+        Showcase of my latest works, projects and developments
+      </p>
+    </Element>
   );
 };
 
