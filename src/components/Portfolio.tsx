@@ -6,6 +6,7 @@ import Contact from "./Contact";
 import Home from "./Home";
 import PageLayout from "./PageLayout";
 import ScrollTopButton from "./interface/ScrollTopButton";
+import Clients from "./Clients";
 
 const Portfolio = () => {
   return (
@@ -16,6 +17,7 @@ const Portfolio = () => {
       <Home />
       <Skills />
       <Experience />
+      <Clients />
       <Projects />
       <Contact />
       <ScrollTopButton />

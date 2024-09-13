@@ -3,12 +3,14 @@ import {
   CloudTechnologies,
   DatabaseTechnologies,
   FrontendTechnologies,
+  OtherTechnologies,
 } from "../utils/tech-lists/tech-lists";
 import Badge from "@mui/material/Badge";
 import StorageIcon from "@mui/icons-material/Storage";
 import LanguageIcon from "@mui/icons-material/Language";
 import CloudIcon from "@mui/icons-material/Cloud";
 import DnsIcon from "@mui/icons-material/Dns";
+import AppRegistrationIcon from "@mui/icons-material/AppRegistration";
 import TechList from "./interface/TechList";
 import { Element } from "react-scroll";
 
@@ -57,6 +59,13 @@ const Skills = () => {
         </Badge>
       </h3>
       <TechList items={CloudTechnologies} hasLine={false} />
+      <h3>
+        Other techonlogies
+        <Badge showZero color="primary" badgeContent={OtherTechnologies.length}>
+          <AppRegistrationIcon />
+        </Badge>
+      </h3>
+      <TechList items={OtherTechnologies} hasLine={false} />
     </Element>
   );
 };

@@ -27,6 +27,7 @@ html {
 
 .page-layout {
   margin-top: 60px;
+  max-width: 100%;
 }
 
 nav {
@@ -225,46 +226,17 @@ nav label {
 
 .projects {
   min-height: calc(100vh - 60px);
-  display: flex;
-  padding: 25px;
-  justify-content: space-evenly;
-  gap: 25px;
-  align-items: flex-start;
 }
 
-.projects .proj {
-  position: relative;
-  min-height: calc(100vh - 110px);
-  background-color: var(--dark);
-  color: var(--light);
-  border-radius: 15px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  overflow: hidden;
-  cursor: pointer;
-  transition: opacity 0.4s;
+.proj-image {
+  max-width: 100%;
+  border-radius: 5px;
+  margin: 5px auto;
+  border: solid 1px var(--mblue);
 }
 
-.proj span {
-  position: absolute;
-  top: -50px;
-  transition: all 0.4s;
-  z-index: 2;
-}
-
-.proj:hover {
-  opacity: 1;
-}
-
-.proj:hover span {
-  transform: translateY(70px);
-  font-size: 50px;
+.demo-button {
+  display: block;
 }
 
 .vertical-timeline-element-date {
@@ -283,7 +255,7 @@ nav label {
   border-bottom: solid 5px var(--darker);
 }
 
-.experience {
+.experience, .projects {
   border-top: solid 5px #fff;
   border-bottom: solid 5px #fff;
 }
@@ -291,6 +263,13 @@ nav label {
 .item-wrapper {
   padding-top: 60px;
   min-height: 100vh;
+}
+
+.item-wrapper-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .dev-image {
@@ -388,6 +367,28 @@ nav label {
 
 .particles-wrapper {
   position: relative;
+}
+
+.tags-array {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.project-tag img {
+  width: 25px;
+  aspect-ratio: 1/1;
+}
+
+.client-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 
 /* * ============================================= */

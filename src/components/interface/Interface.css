@@ -1,8 +1,6 @@
-.tech {
+.tech, .client-item {
   background-color: var(--darker);
   display: flex;
-  width: 200px;
-  height: 250px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -13,9 +11,38 @@
   box-shadow: 0 0 2px;
 }
 
+.tech {
+  width: 200px;
+  height: 250px;
+}
+
+.client-item {
+  position: relative;
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 350px;
+  margin-top: 50px;
+}
+
+.client-item .bottom {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .tech img {
   width: 70px;
   height: 70px;
+}
+
+.client-item img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 5%;
+  aspect-ratio: initial;
 }
 
 .tech span {
@@ -32,7 +59,7 @@
   color: var(--light);
   font-weight: bold;
   margin-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 45px;
 }
 
 .h-line {
@@ -56,6 +83,7 @@
   cursor: pointer;
   border: solid 2px var(--mblue);
   opacity: .5;
+  transition: all .4s;
 }
 
 .scroll-top-btn:hover {

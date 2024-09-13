@@ -18,6 +18,9 @@ const Navbar = () => {
           <NavScrollLink text="Experience" name="experience" />
         </li>
         <li>
+          <NavScrollLink text="Clients" name="clients" />
+        </li>
+        <li>
           <NavScrollLink text="Projects" name="projects" />
         </li>
         <li>

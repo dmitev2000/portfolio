@@ -10,15 +10,9 @@ import BuildIcon from "@mui/icons-material/Build";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { Element } from "react-scroll";
+import { timelineDateFormatting } from "../utils/shared/timeline-options";
 
 const Experience = () => {
-  const date = new Date();
-  const options: Intl.DateTimeFormatOptions = {
-    year: "numeric",
-    month: "short",
-  };
-  const formattedDate = new Intl.DateTimeFormat("en-US", options).format(date);
-
   return (
     <Element className="item-wrapper" id="experience" name="experience">
       <h1 className="title">Work Experience and Education</h1>
@@ -27,7 +21,7 @@ const Experience = () => {
         <VerticalTimeline>
           <VerticalTimelineElement
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            date={formattedDate}
+            date={timelineDateFormatting(undefined)}
             icon={<CalendarMonthIcon />}
           >
             <h3>Current date</h3>

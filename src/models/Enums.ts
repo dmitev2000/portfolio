@@ -25,6 +25,19 @@ import efIcon from "../assets/tech/tech-ef.png";
 import sqlServerIcon from "../assets/tech/tech-sql-server.png";
 import mongooseIcon from "../assets/tech/tech-mongoose.png";
 import expressIcon from "../assets/tech/tech-express.png";
+import azureIcon from "../assets/tech/tech-azure.png";
+import azureFnAppIcon from "../assets/tech/tech-azure-function-app.png";
+import azureWebAppIcon from "../assets/tech/tech-azure-web-app.png";
+import azureBlobIcon from "../assets/tech/tech-azure-blob.png";
+import gitIcon from "../assets/tech/tech-git.png";
+import dockerIcon from "../assets/tech/tech-docker.png";
+import firebaseIcon from "../assets/tech/tech-firebase.png";
+import npmIcon from "../assets/tech/tech-npm.png";
+import pnpmIcon from "../assets/tech/tech-pnpm.png";
+import yamlIcon from "../assets/tech/tech-yaml.png";
+
+import wordleProj from "../assets/proj/proj-wordle.png";
+import weatherProj from "../assets/proj/proj-weather.png";
 
 export const SkillIcon = {
   React: reactIcon,
@@ -54,4 +67,59 @@ export const SkillIcon = {
   SQLServer: sqlServerIcon,
   Mongoose: mongooseIcon,
   Express: expressIcon,
+  Azure: azureIcon,
+  AzureWebApp: azureWebAppIcon,
+  AzureFnApp: azureFnAppIcon,
+  AzureBlob: azureBlobIcon,
+  Git: gitIcon,
+  Docker: dockerIcon,
+  Firebase: firebaseIcon,
+  Npm: npmIcon,
+  Pnpm: pnpmIcon,
+  Yaml: yamlIcon,
 };
+
+export const ProjectImage = {
+  Wordle: wordleProj,
+  Weather: weatherProj,
+};
+
+export enum Tag {
+  React,
+  Angular,
+  Node,
+  Mongo,
+  Javascript,
+  Typescript,
+  Postgres,
+  Html,
+  Css,
+  Bootstrap,
+  Vite,
+  ReactMUI,
+  AngularMUI,
+  Redux,
+  RxJs,
+  NgRx,
+  JQuery,
+  NgBootstrap,
+  SAAS,
+  Vue,
+  Tailwind,
+  CSharp,
+  NetCore,
+  EntityFramework,
+  SQLServer,
+  Mongoose,
+  Express,
+  Azure,
+  AzureWebApp,
+  AzureFnApp,
+  AzureBlob,
+  Git,
+  Docker,
+  Firebase,
+  Npm,
+  Pnpm,
+  Yaml,
+}

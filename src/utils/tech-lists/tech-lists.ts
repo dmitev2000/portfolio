@@ -37,4 +37,18 @@ export const DatabaseTechnologies: TechItem[] = [
   new TechItem(SkillIcon.SQLServer, "SQL Server"),
 ];
 
-export const CloudTechnologies: TechItem[] = [];
+export const CloudTechnologies: TechItem[] = [
+  new TechItem(SkillIcon.Azure, "Azure"),
+  new TechItem(SkillIcon.AzureWebApp, "Web App"),
+  new TechItem(SkillIcon.AzureFnApp, "Function App"),
+  new TechItem(SkillIcon.AzureBlob, "Blob Storage"),
+];
+
+export const OtherTechnologies: TechItem[] = [
+  new TechItem(SkillIcon.Git, "Git"),
+  new TechItem(SkillIcon.Docker, "Docker"),
+  new TechItem(SkillIcon.Firebase, "Firebase"),
+  new TechItem(SkillIcon.Npm, "NPM"),
+  new TechItem(SkillIcon.Pnpm, "PNPM"),
+  new TechItem(SkillIcon.Yaml, "Yaml"),
+];
