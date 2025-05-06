@@ -12,8 +12,9 @@
 }
 
 .tech {
-  width: 200px;
-  height: 250px;
+  min-width: 200px !important;
+  min-height: 250px !important;
+  margin: 5px;
 }
 
 .client-item {
@@ -51,15 +52,8 @@
 }
 
 .tech-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  color: var(--light);
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 45px;
+  max-width: 1200px;
+  margin: 10px auto 25px;
 }
 
 .h-line {
@@ -88,4 +82,29 @@
 
 .scroll-top-btn:hover {
   opacity: 1;
+}
+
+.contact-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  width: 450px;
+}
+
+.contact-card-content {
+  padding: 5px 5px 5px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1;
+  border-left: solid 5px var(--mblue);
+}
+
+@media screen and (max-width: 1200px) {
+  .contact-card {
+    width: 100%;
+  }
 }

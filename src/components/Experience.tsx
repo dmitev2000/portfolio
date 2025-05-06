@@ -8,9 +8,8 @@ import ImportantDevicesIcon from "@mui/icons-material/ImportantDevices";
 import SchoolIcon from "@mui/icons-material/School";
 import BuildIcon from "@mui/icons-material/Build";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { Element } from "react-scroll";
-import { timelineDateFormatting } from "../utils/shared/timeline-options";
+// import { timelineDateFormatting } from "../utils/shared/timeline-options";
 
 const Experience = () => {
   return (
@@ -19,12 +18,26 @@ const Experience = () => {
       <p className="sub-title">My previous jobs and my qualifications</p>
       <div className="experience">
         <VerticalTimeline>
-          <VerticalTimelineElement
+        <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+            date="Dec 01 2025 - PRESENT"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            date={timelineDateFormatting(undefined)}
-            icon={<CalendarMonthIcon />}
+            icon={<WorkIcon />}
           >
-            <h3>Current date</h3>
+            <h3 className="vertical-timeline-element-title">
+              Junior Software Developer
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              MCA, Skopje, Macedonia
+            </h4>
+            <p>
+              Developed and maintained dynamic web applications, utilizing C#
+              and .NET Core for back-end operations, HTML/CSS/TypeScript/Angular
+              for front-end interfaces, and SQL Server for robust database
+              management.
+            </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
@@ -57,9 +70,7 @@ const Experience = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-            date="Jul 01 2024 - PRESENT"
+            date="Jul 01 2024 - Dec 01 2025"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<WorkIcon />}
           >

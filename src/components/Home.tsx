@@ -29,10 +29,10 @@ const Home = () => {
   return (
     <Element className="home" name="home">
       <div className="intro">
-        <h1 className="custom-bold">Hi There,</h1>
         <h1 className="custom-bold">
-          I'm Dario <span>Mitev</span>
+          Dario <span>Mitev</span>
         </h1>
+        <h2 style={{ fontSize: "2em" }}>B.Sc. in internet, networks and security</h2>
         <TypeAnimation
           sequence={sequenceText.map((x) => [x, 1000]).flat()}
           wrapper="span"
@@ -72,7 +72,9 @@ const Home = () => {
           })}
         </div>
       </div>
-      <img className="dev-image" src={devImage} alt="Developer" />
+      <div className="dev-image-wrapper">
+        <img className="dev-image" src={devImage} alt="Developer" />
+      </div>
     </Element>
   );
 };

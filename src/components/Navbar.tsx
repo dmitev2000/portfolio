@@ -1,53 +1,44 @@
-import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
-import { NavLink } from "react-router-dom";
 import NavScrollLink from "./interface/NavScrollLink";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const Navbar = () => {
+  const navLinks = [
+    "Home",
+    "Skills",
+    "Experience",
+    "Clients",
+    "Projects",
+    "Contact",
+  ];
+
   return (
     <nav>
       <p className="brand">DARMIT</p>
       <ul className="list-1">
-        <li>
-          <NavScrollLink text="Home" name="home" />
-        </li>
-        <li>
-          <NavScrollLink text="Skills" name="skills" />
-        </li>
-        <li>
-          <NavScrollLink text="Experience" name="experience" />
-        </li>
-        <li>
-          <NavScrollLink text="Clients" name="clients" />
-        </li>
-        <li>
-          <NavScrollLink text="Projects" name="projects" />
-        </li>
-        <li>
-          <NavScrollLink text="Contact" name="contact" />
-        </li>
+        {navLinks.map((link, index) => (
+          <li key={index}>
+            <NavScrollLink text={link} name={link.toLowerCase()} />
+          </li>
+        ))}
       </ul>
       <input id="nav-toggler" type="checkbox" />
       <label id="open-nav" htmlFor="nav-toggler">
         <MenuIcon fontSize="large" />
       </label>
-      <label id="close-nav" htmlFor="nav-toggler">
+      {/* <label id="close-nav" htmlFor="nav-toggler">
         <CloseIcon fontSize="large" />
-      </label>
-      <div className="mobile-nav">
+      </label> */}
+      <div id="mobile-nav" className="mobile-nav">
         <ul>
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/skills">Skills</NavLink>
-          </li>
-          <li>
-            <NavLink to="/projects">Projects</NavLink>
-          </li>
-          <li>
-            <NavLink to="/Contact">Contact</NavLink>
-          </li>
+          {navLinks.map((link, index) => (
+            <li key={index}>
+              <>
+                <ArrowForwardIcon className="hover-indicator" sx={{ margin: 0 }} />
+              </>
+              <NavScrollLink text={link} name={link.toLowerCase()} />
+            </li>
+          ))}
         </ul>
       </div>
     </nav>

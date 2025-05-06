@@ -35,6 +35,8 @@ import firebaseIcon from "../assets/tech/tech-firebase.png";
 import npmIcon from "../assets/tech/tech-npm.png";
 import pnpmIcon from "../assets/tech/tech-pnpm.png";
 import yamlIcon from "../assets/tech/tech-yaml.png";
+import jestIcon from "../assets/tech/tech-jest.png";
+import appInsightsIcon from "../assets/tech/tech-app-insights.png";
 
 import wordleProj from "../assets/proj/proj-wordle.png";
 import weatherProj from "../assets/proj/proj-weather.png";
@@ -77,6 +79,8 @@ export const SkillIcon = {
   Npm: npmIcon,
   Pnpm: pnpmIcon,
   Yaml: yamlIcon,
+  Jest: jestIcon,
+  AppInsights: appInsightsIcon,
 };
 
 export const ProjectImage = {
@@ -122,4 +126,11 @@ export enum Tag {
   Npm,
   Pnpm,
   Yaml,
+}
+
+export enum ContactType {
+  Email = 0,
+  LinkedIn = 1,
+  GitHub = 2,
+  Other = 3,
 }

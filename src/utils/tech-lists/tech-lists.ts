@@ -20,6 +20,7 @@ export const FrontendTechnologies: TechItem[] = [
   new TechItem(SkillIcon.NgRx, "NgRx"),
   new TechItem(SkillIcon.RxJs, "RxJs"),
   new TechItem(SkillIcon.JQuery, "jQuery"),
+  new TechItem(SkillIcon.Jest, "Jest"),
 ];
 
 export const BackendTechnologies: TechItem[] = [
@@ -42,6 +43,7 @@ export const CloudTechnologies: TechItem[] = [
   new TechItem(SkillIcon.AzureWebApp, "Web App"),
   new TechItem(SkillIcon.AzureFnApp, "Function App"),
   new TechItem(SkillIcon.AzureBlob, "Blob Storage"),
+  new TechItem(SkillIcon.AppInsights, "App Insights"),
 ];
 
 export const OtherTechnologies: TechItem[] = [
