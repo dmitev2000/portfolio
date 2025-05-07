@@ -1,6 +1,7 @@
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import "./Interface.css";
 import { useEffect, useState } from "react";
+import "./Interface.css";
+import { Tooltip } from "@mui/material";
 
 const ScrollTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -19,9 +20,11 @@ const ScrollTopButton = () => {
 
   return (
     isVisible && (
-      <div className="scroll-top-btn" onClick={() => window.scroll(0, 0)}>
-        <KeyboardArrowUpIcon fontSize="large" color="primary" />
-      </div>
+      <Tooltip title="Scroll to top" placement="top" arrow>
+        <div className="scroll-top-btn" onClick={() => window.scroll(0, 0)}>
+          <KeyboardArrowUpIcon fontSize="large" color="primary" />
+        </div>
+      </Tooltip>
     )
   );
 };

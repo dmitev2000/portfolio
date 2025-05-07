@@ -79,6 +79,7 @@
   border: solid 2px var(--mblue);
   opacity: 0.5;
   transition: all 0.4s;
+  z-index: 1000;
 }
 
 .scroll-top-btn:hover {
