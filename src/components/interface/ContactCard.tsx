@@ -51,8 +51,12 @@ const ContactCard = ({
         <LanguageIcon color="primary" fontSize="large" />
       )}
       <Box className="contact-card-content">
-        <Typography variant="button">{contentHeader}</Typography>
-        <Typography variant="body1">{content}</Typography>
+        <Typography title={contentHeader} variant="button" className="ellipsis-text">
+          {contentHeader}
+        </Typography>
+        <Typography title={content} variant="body1" className="ellipsis-text">
+          {content}
+        </Typography>
       </Box>
       <IconButton>
         <ArrowForwardIosIcon />
